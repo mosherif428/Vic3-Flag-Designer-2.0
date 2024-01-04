@@ -1,0 +1,10 @@
+﻿<Application x:Class="Flag_Designer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Flag_Designer"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <FontFamily x:Key="EBGaramond">pack://application:,,,/Fonts/#EBGaramond</FontFamily>
+        <FontFamily x:Key="ParadoxVictorian">pack://application:,,,/Fonts/#ParadoxVictorian</FontFamily>
+    </Application.Resources>
+</Application>

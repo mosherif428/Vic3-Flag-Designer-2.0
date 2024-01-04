@@ -1,0 +1,80 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.22621.0</TargetFramework>
+    <RootNamespace>Flag_Designer</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<UseWPF>true</UseWPF>
+    <StartupObject>Flag_Designer.App</StartupObject>
+  </PropertyGroup>
+	
+	<PropertyGroup>
+		<EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
+		<ApplicationIcon>Images\flag_designer_icon.ico</ApplicationIcon>
+	</PropertyGroup>
+	<ItemGroup>
+		<ApplicationDefinition Include="App.xaml" />
+	</ItemGroup>
+	
+  <ItemGroup>
+    <None Remove="Fonts\EBGaramond-Bold.ttf" />
+    <None Remove="Fonts\EBGaramond-Italic.ttf" />
+    <None Remove="Fonts\EBGaramond-Regular.ttf" />
+    <None Remove="Fonts\ParadoxVictorian-Condensed.otf" />
+    <None Remove="Images\bg_tiling_pattern.png" />
+    <None Remove="Images\fancy_flag_country_view.png" />
+    <None Remove="Images\fancy_pattern_2.png" />
+    <None Remove="Images\flag_designer_icon.bmp" />
+    <None Remove="Images\flag_power_large.png" />
+    <None Remove="Images\maximize.png" />
+    <None Remove="Images\paper_texture.png" />
+    <None Remove="Images\red_cross.png" />
+    <None Remove="Images\reputable.png" />
+    <None Remove="Images\round_button_small_wood.png" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <Content Include="Images\flag_designer_icon.ico" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="13.5.0" />
+    <PackageReference Include="Magick.NET.Core" Version="13.5.0" />
+    <PackageReference Include="SharpGL" Version="3.1.1" />
+    <PackageReference Include="SharpGL.WPF" Version="3.1.1" />
+  </ItemGroup>
+	
+
+  <ItemGroup>
+    <Resource Include="Fonts\EBGaramond-Bold.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\EBGaramond-Italic.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\EBGaramond-Regular.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\ParadoxVictorian-Condensed.otf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\bg_tiling_pattern.png" />
+    <Resource Include="Images\fancy_flag_country_view.png" />
+    <Resource Include="Images\fancy_pattern_2.png" />
+    <Resource Include="Images\flag_power_large.png" />
+    <Resource Include="Images\maximize.png" />
+    <Resource Include="Images\paper_texture.png" />
+    <Resource Include="Images\red_cross.png" />
+    <Resource Include="Images\reputable.png" />
+    <Resource Include="Images\round_button_small_wood.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="OverlayShader.hlsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
